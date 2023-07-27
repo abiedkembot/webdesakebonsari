@@ -309,17 +309,17 @@ section {
 .events .events-header h1 {
     color: var(--primary-text, #1D2130);
     font-family: Roboto;
-    font-size: 56px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 500;
     margin: 0 24px 120px 0;
 }
 
 .events .events-header img {
-    width: 1000px;
+    width: auto;
     float: right;
     padding-left: 20px;
     margin-left: 32px;
-    margin-top: -150px;
+    margin-top: -140px;
 }
 
 .events .events-list {
@@ -467,6 +467,155 @@ section {
 .events .button i {
     margin: 0;
 }
+
+/* --------------------------------------------------------------
+# about Section
+--------------------------------------------------------------*/
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .tittle, .about .side-tittle {
+    flex: 1;
+}
+
+.about .tittle {
+    margin-left: 95px;
+}
+
+.about .tittle h1 {
+    color: var(--primary-text, #1D2130);
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 120px;
+}
+
+.about .side-tittle h2 {
+    color: var(--primary-text, #1D2130);
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.about .side-tittle p {
+    color: var(--primary-text, #525560);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+@media (max-width: 767px) {
+    .about .row {
+        flex-direction: column;
+    }
+    .about .tittle {
+        margin-left: 0;
+    }
+    .about .tittle h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .about .side-tittle h2 {
+        font-size: 18px;
+    }
+    .about .side-tittle p {
+        font-size: 14px;
+    }
+}
+
+/* --------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team .team-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.team .team-header h2 {
+    color: var(--primary-text, #1D2130);
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.team .team-header p {
+    color: var(--primary-text, #525560);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 48px;
+    width: 519px;
+}
+
+.team .team-member {
+    padding-bottom: 48px;
+}
+
+.team .team-member .member-img {
+    padding-bottom: 16px;
+}
+
+.team .team-member .member-img img {
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    max-width: 296px;
+    max-height: 320px;
+    object-fit: cover;
+}
+
+.team .team-member .member-info {
+    text-align: center;
+}
+
+.team .team-member .member-info h4 {
+    color: var(--primary-text, #1D2130);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.team .team-member .member-info span {
+    color: var(--primary-text, #1D2130);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.team .team-member .member-info .social .bi {
+    color: var(--primary-text, #1D2130);
+    width: 20px;
+    height: 20px;
+    margin: 6px; 
+}
+
+@media (max-width: 767px) {
+    .team .team-header p {
+        width: 100%;
+        padding: 20px;
+    }
+    .team .team-member {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .team .team-member .member-img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
 
 /* --------------------------------------------------------------
 # Footer Section
