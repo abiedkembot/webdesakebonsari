@@ -30,25 +30,25 @@
       <body>
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-1">
-              <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <div style="margin-left:-30px; font-size: 24px;" class="roboto-fontheadkonten" >kebonsari</div>
-              </a>
+                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                    <div style="margin-left: -30px;" class="roboto-fontheadkonten">kebonsari</div>
+                </a>
         
-              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="contactus.html" class="nav-link px-2 link-dark">Layanan</a></li>
-                <li><a href="profile.html" class="nav-link px-2 link-dark">Profil</a></li>
-                <li><a href="galeri.html" class="nav-link px-2 link-dark">Berita</a></li>
-                <li><a href="galeri.html" class="nav-link px-2 link-dark">Acara</a></li>
-              </ul>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 link-dark" id="homeLink">Home</a></li>
+                    <li><a href="contactus.html" class="nav-link px-2 link-dark" id="layananLink">Layanan</a></li>
+                    <li><a href="profile.html" class="nav-link px-2 link-secondary" id="profilLink">Profil</a></li>
+                    <li><a href="galeri.html" class="nav-link px-2 link-dark" id="beritaLink">Berita</a></li>
+                    <li><a href="galeri.html" class="nav-link px-2 link-dark" id="acaraLink">Acara</a></li>
+                </ul>
         
-              <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-primary custom-btn">
-                    <a href="contactus.html" style="text-decoration: none;">Hubungi</a>
-                </button>
-            </div>
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-primary custom-btn">
+                        <a href="/contactus.html" style="text-decoration: none;">Hubungi</a>
+                    </button>
+                </div>
             </header>
-          </div>
+        </div>
 
     <!-- ==== About Us === -->
     <section id="about" class="about">
@@ -332,3 +332,16 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+<script>
+    // JavaScript untuk mengubah warna tautan menu saat diklik
+    const links = document.querySelectorAll('.nav-link');
+    
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+            link.classList.add('active');
+        });
+    });
+</script>

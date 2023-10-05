@@ -99,3 +99,11 @@
 .col-md-6 .form-control {
   border: none;
 }
+
+.nav-link {
+  color: #6c757d; /* Warna abu-abu */
+}
+
+.nav-link.active {
+  color: #000; /* Warna hitam */
+}
