@@ -79,7 +79,21 @@
   align-items: center;
   margin-left: 86px;
 }
+/* make responsive for all screen */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+  p.roboto-fontkonten {
+    max-width: fit-content;
+    margin-left: 0px;
+  }
+}
 
+.ml-140 {
+  margin-left: 140px;
+}
 .flex-containerlogo {
   display: flex;
   gap: 20px;
