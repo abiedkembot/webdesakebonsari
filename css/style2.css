@@ -121,3 +121,16 @@
 .nav-link.active {
   color: #000; /* Warna hitam */
 }
+
+.h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+/* make responsive for all screen */
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
