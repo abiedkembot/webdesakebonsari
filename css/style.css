@@ -342,6 +342,7 @@ section {
   max-width: 600px;
   margin: auto;
 }
+/* Make responsive for all screen */
 
 .events .events-list .date {
   flex-basis: 20%;
