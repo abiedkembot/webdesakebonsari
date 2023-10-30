@@ -16,17 +16,22 @@
 
     <style>
         .custom-btn {
-          border-radius: 5;
-          background-color: #1d2130;
-          border-color: #1d2130;
-          padding: 12px 32px 12px 32px;
-          text-decoration: none;
-          color: white;
-        }
-        .custom-btn a {
-          text-decoration: none;
-          color: white;
-        }
+            border-radius: 5;
+            background-color: #1d2130;
+            border-color: #1d2130;
+            padding: 12px 32px 12px 32px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s, border-color 0.3s;
+          }
+          .custom-btn a {
+            text-decoration: none;
+            color: white;
+          }
+          .custom-btn:hover {
+            background-color: #f2c94c;
+            border-color: #f2c94c;
+          }
       </style>
       <body>
         <div class="container">
@@ -36,10 +41,10 @@
               </a>
       
               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.html" class="nav-link px-2 link-dark" id="homeLink">Home</a></li>
-                <li><a href="contactus.html" class="nav-link px-2 link-dark" id="layananLink">Layanan</a></li>
-                <li><a href="profile.html" class="nav-link px-2 link-secondary" id="profilLink">Profil</a></li>
-                <li><a href="galeri.html" class="nav-link px-2 link-dark" id="beritaLink">Berita</a></li>
+                <li><a href="index.html" class="nav-link px-2 link-secondary" id="homeLink">Home</a></li>
+                <li><a href="contactus.html" class="nav-link px-2 link-secondary" id="layananLink">Layanan</a></li>
+                <li><a href="profile.html" class="nav-link px-2 link-dark" id="profilLink">Profil</a></li>
+                <li><a href="galeri.html" class="nav-link px-2 link-secondary" id="beritaLink">Berita</a></li>
                 <!-- <li><a href="galeri.html" class="nav-link px-2 link-dark" id="acaraLink">Acara</a></li> -->
               </ul>
       
@@ -57,24 +62,22 @@
 
             <div class="section-header">
                 <img src="img/line.png" class="img-fluid" alt="">
-                <h1>KNOW ABOUT US</h1>
+                <h1>Perangkat Desa</h1>
             </div>
 
             <div class="row gy-3">
                 <div class="col-xl-8 col-md-8 d-flex" data-aos="zoom-in" data-aos-delay="400">
                     <div class="tittle">
-                        <h1>We are a non-governmental organization</h1>
+                        <h1>Berikut adalah perangkat Desa Kebonsari, Madiun</h1>
+                        <p style="text-align: justify; max-width: 550px;">Kebonsari, Madiun, adalah sebuah desa yang dikelola oleh tim perangkat desa berjumlah 12 orang 
+                            yang berkomitmen untuk memajukan kesejahteraan penduduk desa dan memastikan tata kelola pemerintahan yang efisien.
+                        </p>
                     </div>
                 </div> 
-
-                <div class="col-xl-4 col-md-4 d-flex" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="side-tittle">
-                        <h2>Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.</p>
                     </div>
                 </div>
-            </div>
-        </div>
+           
+
     </section>
 
     <!-- ==== Team === -->
